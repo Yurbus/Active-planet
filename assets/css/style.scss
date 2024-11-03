@@ -176,6 +176,30 @@ body.lock {
 }
 .cards__wrapp-mobile {
     display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    .card {
+        img {
+            
+        }
+        .card__link {
+            background: #0078D0;
+            font-size: clamp(14px, 4vw, 16px);
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 64px;
+            padding: 22px 36px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 20px;
+            &:hover {
+                background: #0172c3;
+            }
+        }
+    }
 }
 
 
@@ -191,6 +215,9 @@ body.lock {
         padding-bottom: 60px;
     }
     .cards__wrapp {
+        display: none;
+    }
+    .cards__wrapp-mobile {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -200,7 +227,7 @@ body.lock {
     }
 }
 @media screen and (max-width:460px) {
-    .cards__wrapp {
+    .cards__wrapp-mobile {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
