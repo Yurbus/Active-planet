@@ -223,6 +223,20 @@ body.lock {
         gap: 20px;
         .card {
             margin-top: 32px;
+            .download__block {
+                display: grid;
+                grid-template-columns: 1fr 54px;
+                gap: 10px;
+                align-items: center;
+                .card__link{
+                    display: flex;
+                    align-items: center;
+                }
+                .download__link {
+                    display: block;
+                    margin-top: 20px;
+                }
+            }
         }
     }
 }

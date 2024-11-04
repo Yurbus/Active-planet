@@ -208,6 +208,20 @@ body.lock {
   .cards__wrapp-mobile .card {
     margin-top: 32px;
   }
+  .cards__wrapp-mobile .card .download__block {
+    display: grid;
+    grid-template-columns: 1fr 54px;
+    gap: 10px;
+    align-items: center;
+  }
+  .cards__wrapp-mobile .card .download__block .card__link {
+    display: flex;
+    align-items: center;
+  }
+  .cards__wrapp-mobile .card .download__block .download__link {
+    display: block;
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 460px) {
   .cards__wrapp-mobile {
